@@ -107,7 +107,7 @@
             <p>
                 Cell: <span class="tel">+33 (0)6.60.82.77.92</span><br />
                 Email: <a href="nadir.kadem@gmail.com">nadir.kadem@gmail.com</a><br />
-                Age: 31
+                Age: <span id="age"></span>
             </p>
         </div>
 
@@ -230,7 +230,9 @@
         <div class="clear"></div>
 
     </div>
-
+    <script>
+    document.getelementById('age').innerHTML = ((new Date()).getFullYear() - 1980);
+    </script>
 </body>
 
 </html>
