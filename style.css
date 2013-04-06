@@ -42,7 +42,6 @@ dd.clear { float: none; margin: 0; height: 15px; }
 .popup:hover
 {
     z-index: 2;
-    left: 50%;
     width: 600px;
     margin-left: -300px;
     margin-top: -100px;
@@ -64,15 +63,3 @@ dd.clear { float: none; margin: 0; height: 15px; }
     -webkit-transform: rotate(4deg);
     -moz-transform: rotate(4deg);
 }
-
-/*a:hover .rotation1
-{
-    -webkit-transform: rotate(3deg);
-    -moz-transform: rotate(3deg);
-}
-a:hover .rotation2
-{
-    -webkit-transform: rotate(-2deg);
-    -moz-transform: rotate(-2deg);
-}
-*/
