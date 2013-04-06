@@ -9,87 +9,8 @@
 
      <title>Nadir Kadem - Senior Web Developer/Web lover</title>
 
-     <style type="text/css">
-        * { margin: 0; padding: 0; }
-        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
-        .clear { clear: both; }
-        #page-wrap { width: 800px; margin: 60px auto 60px; }
-        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
-        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
-        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
-        p { margin: 0 0 16px 0; }
-        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
-        a:hover { border-bottom-style: solid; color: black; }
-        ul { margin: 0 0 32px 17px; }
-        #objective { width: 500px; float: left; }
-        #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
-        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
-        dd { width: 600px; float: right; }
-        dd.clear { float: none; margin: 0; height: 15px; }
-        #picture
-        {
-            float: right; margin: -30px 0 0 0;
-            background-color: #FFF;
-            -webkit-transform: rotate(-4deg);
-            -moz-transform: rotate(-4deg);
-            -webkit-box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
-            padding: 12px;
-            border: 1px solid #EEE;
-        }
-        .popup
-        {
-            z-index: 1;
-            margin-top: 2px;
-            margin-left: 10px;
-            position: absolute;
-            width: 20px;
-            -moz-transition: all 0.3s linear;
-            -webkit-transition: all 0.3s linear;
-            background-color: #FFF;
-            -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-            -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-            padding: 1px;
-            border: 1px solid #EEE;
-        }
-        a:hover .popup
-        {
-            z-index: 2;
-            width: 300px;
-            margin-top: -100px;
-            opacity: 1;
-            padding: 12px;
-            -webkit-box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
-            -mowz-box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        .rotation1
-        {
-            -webkit-transform: rotate(-3deg);
-            -moz-transform: rotate(-3deg);
-        }
-        .rotation2
-        {
-            -webkit-transform: rotate(4deg);
-            -moz-transform: rotate(4deg);
-        }
-
-        a:hover .rotation1
-        {
-            -webkit-transform: rotate(3deg);
-            -moz-transform: rotate(3deg);
-        }
-        a:hover .rotation2
-        {
-            -webkit-transform: rotate(-2deg);
-            -moz-transform: rotate(-2deg);
-        }
-        </style>
-        <style type="text/css" media="print">
-            .popup
-            {
-                display: none;
-            }
-        </style>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="print.css" media="print">
 </head>
 
 <body>
@@ -129,17 +50,24 @@
                 <div class="slide">
                 <h2>Dailymotion <span>Lead Front Developer 2006-present</span></h2>
                 <ul>
-                    <li>Management/recruitment of a team of 5 developers</li>
+                    <li>Management/recruitment of a team of 6 developers</li>
+                    <li>Switched the site to TWIG (doubling page speed)</li>
+                    <li>Worked on the general release workflow and helped build our release system (we ship code to production several times a day)
+                        <img src="images/release.png" class="popup rotation2" alt="Dailymotion release dashboard"/>
+                    </li>
+                    <li>
+                        Added the GateKeeper concept (a configurable wall in front of functionalities) to Dailymotion. The GateKeeper is called millions of times per day.
+                        <img src="images/gatekeeper.png" class="popup rotation1" alt="Dailymotion Gatekeeper"/>
+                    </li>
                     <li>New flash player (new architecture + switch to actionscript 3) with another developer</li>
-                    <li>HTML5 version of the site (html5 video player) + demo page
-                        <a href="http://www.dailymotion.com/html5" target="_blank">HTML5&nbsp;demo
-                            <img src="images/html5.png" class="popup rotation1" alt="Dailymotion HTML5 demo"/>
-                        </a>
+                    <li>HTML5 version of the site (html5 video player)
+                        <img src="images/html5.png" class="popup rotation2" alt="Dailymotion HTML5 demo"/>
                     </li>
                     <li>HTML5 interface for Google TV/Chrome Webs Store and future set top boxes :
                         <a href="http://www.dailymotion.com/stream" target="_blank">Stream
-                            <img src="images/stream.png" class="popup rotation2" alt="Dailymotion Stream"/>
                         </a>
+                        <img src="images/stream.png" class="popup rotation2" alt="Dailymotion Stream"/>
+
                     </li>
                 </ul>
                 </div>
@@ -148,6 +76,7 @@
                 <ul>
                     <li>Switch the site from php4 to php5 (object oriented)</li>
                     <li>Developed new functionalities on the site, and real estate sites leechers</li>
+                    <li>Developed a ruby client to insert new real estate classified ads</li>
                 </ul>
 
                 <h2>Flipside (Vivendi Universal) <span>Developer - Paris - 2000-2003</span></h2>
@@ -164,7 +93,9 @@
             <dd>
                 <h2>Programming skills</h2>
                 <ul>
-                    <li>HTML5 (CSS3, canvas, javascript specific apis)</li>
+                    <li>HTML5</li>
+                    <li>Javascript</li>
+                    <li>CSS3</li>
                     <li>PHP5, MySql</li>
                     <li>ActionScript 2 and 3</li>
                     <li>Python</li>
@@ -174,8 +105,8 @@
 
                 <h2>Frameworks</h2>
                 <ul>
-                    <li>Web applications: Symfony, Django, Google webapp</li>
-                    <li>Javascript: Prototype, JQuery, KnockoutJS</li>
+                    <li>Web applications: Symfony, Silex, Django, Google webapp</li>
+                    <li>Javascript: jQuery, Prototype, AngularJS, KnockoutJS</li>
                     <li>CSS: Blueprint, 960.gs</li>
                 </ul>
 
